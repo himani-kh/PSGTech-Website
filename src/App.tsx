@@ -1,16 +1,15 @@
-import './App.css';
-import MyHeader from './components/header/header';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import Navbar from "./components/navbar";
+import Home from "./pages/Home";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <MyHeader/>
+      <Navbar />
+      <Home />
     </div>
   );
 }
-
-export default App;
