@@ -9,7 +9,7 @@ const Header = () => {
       <Search />
       <SocialMedia />
       <button className="bg-secondary px-2 py-1 rounded-sm text-black" style={{fontWeight: 600}}>
-        Ecampus Login
+        e-campus
       </button>
     </div>
   );
