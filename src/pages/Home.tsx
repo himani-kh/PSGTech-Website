@@ -1,9 +1,9 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-import Image1 from "../assests/home/image-1.jpg";
-import Image2 from "../assests/home/image-2.jpg";
-import Image3 from "../assests/home/image-3.jpg";
+import Image1 from "../assests/home/carousel1.jpeg";
+import Image2 from "../assests/home/carousel2.jpeg";
+import Image3 from "../assests/home/carousel3.jpeg";
 
 const Home = () => {
   const slides = [
@@ -43,7 +43,7 @@ const Home = () => {
       dynamicHeight={false}
     >
       {slides.map((slide) => (
-        <div className="h-[30rem] relative">
+        <div className="h-[40rem] relative">
           <img className="" src={slide.src} alt="" />
           <div className="absolute bottom-0 left-0 z-10 bg-primary/85 w-full text-white text-left py-2 px-8 font-semibold">
             <p className="">{slide.caption}</p>
