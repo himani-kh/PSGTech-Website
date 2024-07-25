@@ -1,29 +1,14 @@
-import { FaSearch } from "react-icons/fa";
-import { useState } from "react";
+import { FaFacebookSquare, FaYoutube, FaLinkedin } from "react-icons/fa";
+import "./styles.css";
 
-const Search = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const SocialMedia = () => {
   return (
-    <div className="flex space-x-2 items-center">
-      {isOpen && (
-        <input
-          placeholder="Start typing to search..."
-          className="px-3 py-1 bg-primary-600 rounded-md"
-          type="text"
-        />
-      )}
-      <button
-        title="search"
-        onClick={(e) => {
-          e.preventDefault();
-          setIsOpen(!isOpen);
-        }}
-      >
-        <FaSearch className="text-lg" />
-      </button>
+    <div className="social-media-container">
+      <FaFacebookSquare />
+      <FaYoutube />
+      <FaLinkedin />
     </div>
   );
 };
 
-export default Search;
+export default SocialMedia;
