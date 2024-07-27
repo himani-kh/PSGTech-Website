@@ -1,8 +1,10 @@
+import React from 'react';
 import Header from "../header";
-import BottomBar from "./components/BottomBar";
 import TopBar from "./components/TopBar";
+import BottomBar from './components/BottomBar';
+//import BottomBar from './components/BottomBar';
 
-const Navbar = () => {
+const Navbar : React.FC = () => {
   return (
     <div>
       <Header />
@@ -11,5 +13,6 @@ const Navbar = () => {
     </div>
   );
 };
+
 
 export default Navbar;

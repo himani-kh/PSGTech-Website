@@ -1,7 +1,11 @@
-const BottomBar = () => {
+import React from 'react';
+import './BottomBar.css'; 
+
+
+const BottomBar : React.FC= () => { 
   return (
-    <div className="flex justify-between p-2">
-      <div className="flex space-x-10" style={{fontWeight: 600, color:'var(--primary-color)'}}>
+    <div className="bottom-bar">
+      <div className="bottom-bar-section" style={{fontWeight: 600, color:'var(--primary-color)'}}>
         <div></div>
         <p>Home</p>
         <p>About Us</p>
@@ -9,7 +13,7 @@ const BottomBar = () => {
         <p>Admissions</p>
         <p>Exams</p>
       </div>
-      <div className="flex space-x-10" style={{fontWeight: 600, color:'var(--primary-color)'}}>
+      <div className="bottom-bar-section" style={{fontWeight: 600, color:'var(--primary-color)'}}>
         <p>NAAC</p>
         <p>Research</p>
         <p>Industry</p>
@@ -22,3 +26,5 @@ const BottomBar = () => {
 };
 
 export default BottomBar;
+
+
