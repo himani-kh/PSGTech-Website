@@ -1,11 +1,14 @@
+import React from 'react';
 import PSGLogo from "../../../assests/logo.svg";
+import "./TopBar.css"
 
-const TopBar = () => {
+
+const TopBar: React.FC= () => {
   return (
-    <div className="flex space-x-6 items-center justify-end p-2 bg-primary text-white relative" style={{fontWeight: 400, fontSize: '13px'}}>
-      <div className="absolute flex flex-col items-center p-3 bg-primary top-0 left-[50%] -translate-x-[50%] z-10">
-        <img src={PSGLogo} className="w-16" alt="" />
-        <h1 className="text-xl" style={{fontWeight: 600}}>PSG College of Technology</h1>
+    <div className="top-bar" style={{ fontWeight: 400, fontSize: '13px' }}>
+      <div className="top-bar-logo">
+        <img src={PSGLogo} className="logo-image" alt="" />
+        <h1 className="logo-text" style={{fontWeight: 600}}>PSG College of Technology</h1>
       </div>
       <p>PSG Mail</p>
       <p>Students</p>
@@ -18,5 +21,6 @@ const TopBar = () => {
     </div>
   );
 };
+
 
 export default TopBar;
